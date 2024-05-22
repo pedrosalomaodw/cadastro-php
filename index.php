@@ -70,7 +70,7 @@
   </div>
   <?php
   if ($dados_apresentavel[0] > 0){
-    $mensagem_email_existente="<p id='mensagem-error-email' style='display:block;'>Esse email já existe!</p>";
+    echo "<p id='mensagem-error-email'>Esse email já existe!</p>";
   }else{
 
     $database_connection->query($insert_into);
